@@ -1,0 +1,162 @@
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.navbar {
+  width: 100%;
+  min-height: 82px;
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #101827;
+  color: #ffffff;
+}
+
+/* LOGO */
+
+.navbar-logo {
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.navbar-logo span {
+  color: #a78bfa;
+}
+
+.navbar-logo small {
+  color: #a78bfa;
+  font-size: 30px;
+}
+
+/* NAVIGATION LINKS */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar-links a {
+  position: relative;
+
+  color: #cbd5e1;
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffffff;
+}
+
+/* ACTIVE LINK */
+
+.navbar-links a.active {
+  color: #a78bfa;
+}
+
+.navbar-links a.active::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+
+  width: 100%;
+  height: 2px;
+
+  background: #a78bfa;
+  border-radius: 5px;
+}
+
+/* NAVIGATION ACTIONS */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.login-link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #a78bfa;
+}
+
+.register-button {
+  padding: 13px 23px;
+
+  background: #7c3aed;
+  color: #ffffff;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.register-button:hover {
+  background: #6d28d9;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE NAVIGATION
+========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 18px 5%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .navbar-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .navbar-actions {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 22px;
+  }
+
+  .navbar-links {
+    gap: 17px;
+  }
+
+  .navbar-links a {
+    font-size: 13px;
+  }
+
+  .login-link {
+    font-size: 13px;
+  }
+
+  .register-button {
+    padding: 10px 13px;
+    font-size: 12px;
+  }
+}

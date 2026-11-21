@@ -1,0 +1,66 @@
+
+/* FEATURED EVENTS SECTION */
+
+.featured-events {
+  padding: 80px 7%;
+  background: #ffffff;
+}
+
+/* SECTION HEADER */
+
+.featured-events-header {
+  margin-bottom: 35px;
+}
+
+.section-label {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  color: #7c3aed;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.featured-events-header h2 {
+  margin-bottom: 12px;
+
+  color: #101827;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.featured-events-header p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* EVENTS GRID */
+
+.featured-events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+  .featured-events-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-events {
+    padding: 60px 6%;
+  }
+
+  .featured-events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-events-header h2 {
+    font-size: 26px;
+  }
+}

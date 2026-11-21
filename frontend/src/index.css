@@ -1,0 +1,58 @@
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global variables */
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #1e293b;
+  background: #f8fafc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  --primary: #7c3aed;
+  --primary-dark: #6d28d9;
+  --dark: #101827;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --white: #ffffff;
+  --background: #f8fafc;
+}
+
+/* Body */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
